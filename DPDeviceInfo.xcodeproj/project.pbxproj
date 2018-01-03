@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366CDB791FFC8B2900FC30C6 /* DPDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 366CDB781FFC8B2900FC30C6 /* DPDeviceInfo.a */; };
 		E217D8871EC5AE3A0019527E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E217D8861EC5AE3A0019527E /* main.m */; };
 		E217D88A1EC5AE3A0019527E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E217D8891EC5AE3A0019527E /* AppDelegate.m */; };
 		E217D88D1EC5AE3A0019527E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E217D88C1EC5AE3A0019527E /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		E217D8981EC5AE3A0019527E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E217D8961EC5AE3A0019527E /* LaunchScreen.storyboard */; };
 		E217D8A31EC5AE3A0019527E /* DPDeviceInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E217D8A21EC5AE3A0019527E /* DPDeviceInfoTests.m */; };
 		E217D8AE1EC5AE3A0019527E /* DPDeviceInfoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E217D8AD1EC5AE3A0019527E /* DPDeviceInfoUITests.m */; };
-		E217D8C01EC5AE780019527E /* DPDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E217D8BC1EC5AE780019527E /* DPDeviceInfo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		366CDB781FFC8B2900FC30C6 /* DPDeviceInfo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = DPDeviceInfo.a; sourceTree = "<group>"; };
 		E217D8821EC5AE3A0019527E /* DPDeviceInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPDeviceInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E217D8861EC5AE3A0019527E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E217D8881EC5AE3A0019527E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		E217D8A91EC5AE3A0019527E /* DPDeviceInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPDeviceInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E217D8AD1EC5AE3A0019527E /* DPDeviceInfoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPDeviceInfoUITests.m; sourceTree = "<group>"; };
 		E217D8AF1EC5AE3A0019527E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E217D8BC1EC5AE780019527E /* DPDeviceInfo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = DPDeviceInfo.a; sourceTree = "<group>"; };
 		E217D8BF1EC5AE780019527E /* DPDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPDeviceInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E217D8C01EC5AE780019527E /* DPDeviceInfo.a in Frameworks */,
+				366CDB791FFC8B2900FC30C6 /* DPDeviceInfo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +151,7 @@
 		E217D8BB1EC5AE780019527E /* DPDeviceInfo */ = {
 			isa = PBXGroup;
 			children = (
-				E217D8BC1EC5AE780019527E /* DPDeviceInfo.a */,
+				366CDB781FFC8B2900FC30C6 /* DPDeviceInfo.a */,
 				E217D8BD1EC5AE780019527E /* include */,
 			);
 			path = DPDeviceInfo;
@@ -240,6 +240,7 @@
 				TargetAttributes = {
 					E217D8811EC5AE3A0019527E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = P7MUCPXJEB;
 						ProvisioningStyle = Automatic;
 					};
 					E217D89D1EC5AE3A0019527E = {
@@ -456,13 +457,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P7MUCPXJEB;
 				INFOPLIST_FILE = DPDeviceInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DPDeviceInfo/DPDeviceInfo",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dp.DPDeviceInfo;
+				PRODUCT_BUNDLE_IDENTIFIER = DP.RZTakeImageBlock213412412;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -471,13 +474,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P7MUCPXJEB;
 				INFOPLIST_FILE = DPDeviceInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DPDeviceInfo/DPDeviceInfo",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dp.DPDeviceInfo;
+				PRODUCT_BUNDLE_IDENTIFIER = DP.RZTakeImageBlock213412412;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -547,6 +552,7 @@
 				E217D8B41EC5AE3A0019527E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E217D8B51EC5AE3A0019527E /* Build configuration list for PBXNativeTarget "DPDeviceInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +561,7 @@
 				E217D8B71EC5AE3A0019527E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E217D8B81EC5AE3A0019527E /* Build configuration list for PBXNativeTarget "DPDeviceInfoUITests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +570,7 @@
 				E217D8BA1EC5AE3A0019527E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

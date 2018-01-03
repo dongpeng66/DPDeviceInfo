@@ -9,6 +9,7 @@
   NSString *device=[DPDeviceInfo dp_getDeviceIDFA];</br>
 
   NSString *Macdevice=[DPDeviceInfo dp_getDeviceMAC];</br>
+  优化了.a问价在真机上的问题和兼容性问题;</br>
 
 
 
